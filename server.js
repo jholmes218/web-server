@@ -1,8 +1,7 @@
 var express = require('express');
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
-// var middleware = require ()
 var middleware = require('./middleware.js');
 
 app.use(middleware.logger);
@@ -17,3 +16,26 @@ app.listen(PORT, function () {
 	console.log('Server ' + PORT + ' is starting...');
 	console.log('Express server started!');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// in command use git add .    to add new file/modified files to git.
+// in command use git commit -a -m "Type what I did here"   to document.
